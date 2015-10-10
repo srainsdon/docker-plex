@@ -10,7 +10,7 @@ RUN echo "deb http://shell.ninthgate.se/packages/debian wheezy main" > /etc/apt/
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
-VOLUME ["/config","/data"]
+VOLUME ["/config","/Movies","/Shows"]
 
 ADD ./start.sh /start.sh
 RUN chmod u+x  /start.sh
